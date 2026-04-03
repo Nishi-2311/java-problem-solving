@@ -217,7 +217,9 @@ public class FoodOrderingSystem {
             ch = sc.next();
             sc.nextLine();
             if(ch.equalsIgnoreCase("no")) {
-            		System.out.println("Total Bill : "+total);
+            		System.out.println("Bill excluding GST: "+total);
+            		System.out.println("GST applied on your order is: 5%");
+            		System.out.println("Bill including GST: "+(total+total*0.05));
             }
         } while (ch.equalsIgnoreCase("yes"));
     }
